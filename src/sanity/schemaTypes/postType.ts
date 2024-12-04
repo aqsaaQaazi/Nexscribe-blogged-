@@ -9,6 +9,7 @@ export const postType = defineType({
   fields: [
     defineField({
       name: 'title',
+      title:'Title', 
       type: 'string',
     }),
     defineField({
@@ -16,6 +17,7 @@ export const postType = defineType({
       type: 'slug',
       options: {
         source: 'title',
+        maxLength: 96,
       },
     }),
     defineField({
